@@ -1,0 +1,3 @@
+prism_blog_homepage:
+    path:     /
+    defaults: { _controller: PrismBlogBundle:Default:index }

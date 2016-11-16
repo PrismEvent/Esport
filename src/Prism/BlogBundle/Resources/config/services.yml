@@ -1,0 +1,4 @@
+services:
+#    prism_blog.example:
+#        class: Prism\BlogBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
