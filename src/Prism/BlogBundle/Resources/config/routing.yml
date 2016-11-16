@@ -1,3 +1,12 @@
-prism_blog_homepage:
-    path:     /
-    defaults: { _controller: PrismBlogBundle:Default:index }
+prism_blog_add:
+    path:     /Blog/Add
+    defaults: { _controller: PrismBlogBundle:Blog:add }
+
+prism_blog_edit:
+    path: /Blog/Edit/{id}
+    defaults: { _controller: PrismBlogBundle:Blog:edit}
+
+prism_blog_view:
+    path: /Blog/View/{id}
+    defaults: { _controller: PrismBlogBundle:Blog:view }
+
