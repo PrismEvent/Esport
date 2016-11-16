@@ -1,6 +1,6 @@
 prism_blog:
     resource: "@PrismBlogBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /Blog
 
 prism_esport:
     resource: "@PrismEsportBundle/Resources/config/routing.yml"

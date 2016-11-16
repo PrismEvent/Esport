@@ -1,3 +1,4 @@
 prism_esport_homepage:
     path:     /index
-    defaults: { _controller: PrismEsportBundle:Esport:index }
+    defaults: 
+        _controller: PrismEsportBundle:Esport:index
