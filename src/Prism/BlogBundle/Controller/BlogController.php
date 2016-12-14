@@ -4,14 +4,8 @@ namespace Prism\BlogBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Prism\BlogBundle\Entity\Article;
 use Prism\BlogBundle\Form\ArticleType;
-use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
-use Symfony\Component\Form\Extension\Core\Type\FormType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class BlogController extends Controller
 {
@@ -20,14 +14,7 @@ class BlogController extends Controller
     {
     	$article = new Article();
 
-    	$formBuilder  = $this->get('form.factory')->createBuilder(ArticleType::class, $article);
-		$formBuilder
-			->add('author',    TextType::class)
-			->add('date',      DateTimeType::class)
-			->add('title',     TextType::class)
-			->add('content',   TextareaType::class, array('attr' => array('class'=>'tinymce')))
-			->add('save',      SubmitType::class);
-		$form = $formBuilder->getForm();
+    	$form = $this->get('form.factory')->create(ArticleType::class, $article);
 
     	if ($request->isMethod('POST') && $form->handleRequest($request)->isValid())
     	{
@@ -82,7 +69,7 @@ class BlogController extends Controller
 
     	if (null === $article) 
     	{
-      		throw new NotFoundHttpException("L'article que vous cherchez n'existe pas.");
+      		throw new NotFoundHttpException("L'article que vous chezchez n'existe pas.");
     	}
 
     	return $this->render('PrismBlogBundle:Blog:view.html.twig', array(

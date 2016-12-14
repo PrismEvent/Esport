@@ -13,7 +13,6 @@ prism_blog_edit:
 prism_blog_view:
     path: /Article/{id}
     defaults: 
-        id: 1
         _controller: PrismBlogBundle:Blog:view
     requirements:
         id: \d+
