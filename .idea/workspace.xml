@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdbf5bb3-8831-4411-bd09-c6ed4157222d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Prism/EsportBundle/Resources/views/Esport/index.html.twig" afterPath="$PROJECT_DIR$/src/Prism/EsportBundle/Resources/views/Esport/index.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +36,8 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Prism/EsportBundle/Resources/views/Esport/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="240" column="92" lean-forward="false" selection-start-line="240" selection-start-column="92" selection-end-line="240" selection-end-column="92" />
+            <state relative-caret-position="657">
+              <caret line="89" column="53" lean-forward="false" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -261,7 +262,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Twig" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager">
@@ -330,12 +331,12 @@
       <workItem from="1481719922144" duration="913000" />
       <workItem from="1481720851012" duration="1229000" />
       <workItem from="1481722096080" duration="459000" />
-      <workItem from="1481722570685" duration="4495000" />
+      <workItem from="1481722570685" duration="5964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7123000" />
+    <option name="totallyTimeSpent" value="8592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,7 +349,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20354457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -414,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Prism/EsportBundle/Resources/views/Esport/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="240" column="92" lean-forward="false" selection-start-line="240" selection-start-column="92" selection-end-line="240" selection-end-column="92" />
+        <state relative-caret-position="657">
+          <caret line="89" column="53" lean-forward="false" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
           <folding />
         </state>
       </provider>
