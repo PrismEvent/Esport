@@ -61,6 +61,22 @@ class BlogController extends Controller
     }
 
     //Action: View an article (need the id)
+    public function viewlistAction($id)
+    {
+    	$em = $this->getDoctrine()->getManager();
+
+    	$articles = $em->getRepository('PrismBlogBundle:Article')->findAll();
+
+    	if (null === $articles) 
+    	{
+      		throw new NotFoundHttpException("L'article que vous cherchez n'existe pas.");
+    	}
+
+    	return $this->render('PrismBlogBundle:Blog:viewlist.html.twig', array(
+    		'articles' => $articles));
+    }
+
+    //Action: View an article (need the id)
     public function viewAction($id)
     {
     	$em = $this->getDoctrine()->getManager();

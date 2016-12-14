@@ -10,10 +10,15 @@ prism_blog_edit:
     requirements:
         id: \d+
 
+prism_blog_viewlist:
+    path: /Article
+    defaults: 
+        _controller: PrismBlogBundle:Blog:viewlist
+
 prism_blog_view:
     path: /Article/{id}
     defaults: 
         _controller: PrismBlogBundle:Blog:view
     requirements:
-        id: \d+
+        id: \d
 
