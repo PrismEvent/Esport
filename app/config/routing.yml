@@ -6,3 +6,6 @@ prism_esport:
     resource: "@PrismEsportBundle/Resources/config/routing.yml"
     prefix:   /
 
+kms_froala_editor:
+    resource: "@KMSFroalaEditorBundle/Resources/config/routing.yml"
+    prefix:   /froalaeditor

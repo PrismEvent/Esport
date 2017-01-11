@@ -25,7 +25,8 @@
         "symfony/assetic-bundle": "^2.7.1",
         "leafo/scssphp": "~0.6",
         "patchwork/jsqueeze": "~1.0",
-        "stfalcon/tinymce-bundle": "2.0"
+        "stfalcon/tinymce-bundle": "2.0",
+        "kms/froala-editor-bundle": "dev-master"
 
     },
     "require-dev": {

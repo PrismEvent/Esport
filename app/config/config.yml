@@ -31,6 +31,7 @@ framework:
     fragments:       ~
     http_method_override: true
     assets: ~
+    engines: ['twig']
 
 # Twig Configuration
 twig:
@@ -72,3 +73,9 @@ assetic:
     use_controller: '%kernel.debug%'
     filters:
         cssrewrite: ~
+
+kms_froala_editor:
+    language: "fr"
+    toolbarInline: true
+    tableColors: [ "#FFFFFF", "#FF0000" ]
+    #saveParams: { "id" : "myEditorField" }
