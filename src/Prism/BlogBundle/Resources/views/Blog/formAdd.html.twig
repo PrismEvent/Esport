@@ -10,7 +10,7 @@
     {{ form_row(form.title) }}
     {{ form_row(form.author) }}
     {{ form_row(form.date) }}
-    {{ froala_display( content ) }}
+    {{ froala_display( form_widget(form.content) ) }}
 
     {{ form_row(form.save, { 'label': 'Post' }) }}
     {{ form_end(form) }}
