@@ -9,7 +9,7 @@
 {% for article in articles %}
 <article>
 	<a href="{{ path('prism_blog_view', { 'id': article.id }) }}" class="image"><img src="{{ asset('images/prism_placeholder2.jpg') }}" alt="" /></a>
-	<h3>{{ article.title }} </h3> <h5><i>Par {{ article.author }}, le {{ article.date| date('d/m/Y H:i') }}</i>	</h5>
+	<h3>{{ article.title }} </h3> <h3><i>Par {{ article.author }}, le {{ article.date| date('d/m/Y H:i') }}</i>	</h3>
 </article>
 {% endfor %}
 </div>

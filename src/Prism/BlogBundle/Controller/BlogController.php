@@ -61,7 +61,7 @@ class BlogController extends Controller
     }
 
     //Action: View an article (need the id)
-    public function viewlistAction($id)
+    public function viewlistAction()
     {
     	$em = $this->getDoctrine()->getManager();
 
@@ -90,5 +90,20 @@ class BlogController extends Controller
 
     	return $this->render('PrismBlogBundle:Blog:view.html.twig', array(
     		'article' => $article));
+    }
+
+    public function viewFirstAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $lastArticle = $em->getRepository('PrismBlogBundle:Article')->findBy(array(), array('date' => 'desc'), 6, 0);
+
+        if (null === $lastArticle)
+        {
+            throw new NotFoundHttpException("Il n'y a pas encore d'article sur le blog.");
+        }
+
+        return $this->render('PrismBlogBundle:Blog:viewFirst.html.twig', array(
+            'lastArticle' => $lastArticle));
     }
 }

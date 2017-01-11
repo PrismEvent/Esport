@@ -1,0 +1,17 @@
+<section>
+    <header class="major">
+        <h2>Blog Esport</h2>
+    </header>
+    <div class="posts">
+        {% for article in lastArticle %}
+            <article>
+                <a href="{{ path('prism_blog_view', { 'id': article.id }) }}" class="image"><img src="{{ asset('images/prism_placeholder2.jpg') }}" alt="" /></a>
+                <h3>{{ article.title }}</h3>
+                <p>Par {{ article.author }}, le {{ article.date | date('d/m/Y') }}</p>
+                <ul class="actions">
+                    <li><a href="{{ path('prism_blog_view', { 'id': article.id }) }}" class="button">Lire</a></li>
+                </ul>
+            </article>
+        {% endfor %}
+    </div>
+</section>
