@@ -24,7 +24,10 @@
         "incenteev/composer-parameter-handler": "^2.0",
         "symfony/assetic-bundle": "^2.7.1",
         "leafo/scssphp": "~0.6",
-        "patchwork/jsqueeze": "~1.0"
+        "patchwork/jsqueeze": "~1.0",
+        "devhelp/piwik-bundle": "dev-master",
+        "devhelp/piwik-api-guzzle": "dev-master",
+        "devhelp/piwik-api": "dev-master"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
