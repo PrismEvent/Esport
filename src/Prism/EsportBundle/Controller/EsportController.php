@@ -10,4 +10,9 @@ class EsportController extends Controller
     {
         return $this->render('PrismEsportBundle:Esport:index.html.twig');
     }
+
+    public function partenairesAction()
+    {
+        return $this->render('PrismEsportBundle:Esport:partenaires.html.twig');
+    }
 }

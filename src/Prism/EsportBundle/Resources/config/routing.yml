@@ -2,3 +2,8 @@ prism_esport_homepage:
     path:     /
     defaults: 
         _controller: PrismEsportBundle:Esport:index
+
+prism_esport_partenaires:
+    path:     /partenaires
+    defaults: 
+        _controller: PrismEsportBundle:Esport:partenaires
