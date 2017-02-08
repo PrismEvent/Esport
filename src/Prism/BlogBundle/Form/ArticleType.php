@@ -20,7 +20,8 @@ class ArticleType extends AbstractType
     {
         $builder
         ->add('date', DateTimeType::class, array(
-            'data' => new \DateTime("now")))
+            'data' => new \DateTime("now"),
+            'widget' => 'choice'))
         ->add('title', TextType::class)
         ->add('author', TextType::class)
         ->add('content', FroalaEditorType::class)

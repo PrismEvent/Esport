@@ -9,11 +9,9 @@
         {{ form_row(form.title) }}
     </div>
     {{ form_row(form.author) }}
-    {{ form_widget(form.date.day) }}
-    {{ form_widget(form.date.month) }}
-    {{ form_widget(form.date.year) }}
-    {{ form_widget(form.date.hour) }}
-    {{ form_widget(form.date.minute) }}
+    <div class="6u 12u$(xsmall)">
+        {{ form_widget(form.date) }}
+    </div>
 
     <div class="fr-view">
         {{ froala_display( form_widget(form.content) ) }}
