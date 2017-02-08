@@ -77,4 +77,9 @@ kms_froala_editor:
     language: "fr"
     toolbarInline: false
     tableColors: [ "#FFFFFF", "#FF0000" ]
+    includeCSS : false
+    #fileInsertButtons : ['fileBack', '|']
     #saveParams: { "id" : "myEditorField" }
+
+vich_uploader:
+    db_driver: orm
