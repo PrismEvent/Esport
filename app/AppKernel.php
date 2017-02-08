@@ -20,7 +20,9 @@ class AppKernel extends Kernel
             new Prism\BlogBundle\PrismBlogBundle(),
             new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
             new KMS\FroalaEditorBundle\KMSFroalaEditorBundle(),
-            new Vich\UploaderBundle\VichUploaderBundle(),
+            //new Vich\UploaderBundle\VichUploaderBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new Prism\UserBundle\PrismUserBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -1,0 +1,4 @@
+services:
+#    prism_user.example:
+#        class: Prism\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
