@@ -19,7 +19,8 @@ class ArticleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-        ->add('date', DateTimeType::class)
+        ->add('date', DateTimeType::class, array(
+            'data' => new \DateTime("now")))
         ->add('title', TextType::class)
         ->add('author', TextType::class)
         ->add('content', FroalaEditorType::class)
