@@ -1,153 +1,28 @@
 {% extends '::layout.html.twig' %}
 {% block body %}
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-							<!-- Header -->
-								<header id="header">
-									<a href="{ path('prism_esport_homepage') }" class="logo"><strong>Prism eSport</strong></a>
-									<ul class="icons">
-										<li><a href="https://twitter.com/Prismesport" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://www.facebook.com/prismesport" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="https://www.instagram.com/prismesport/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									</ul>
-								</header>
-
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Nos partenaires</h1>
-											<p>Ils nous suivent dans toutes nos aventures.</p>
-										</header>
-									</div>
-								</section>
+    <!-- Banner -->
+        <section id="banner">
+            <div class="content">
+                <header>
+                    <h1>Nos partenaires</h1>
+                    <p>Ils nous suivent dans toutes nos aventures.</p>
+                </header>
+            </div>
+        </section>
 
 
-							<!-- Section partenaires-->
-								<section>
-                                <p>
-                                    <span class="image main"><img src="{{ asset('images/partenaires/lusee_banner.jpg') }}" alt=""></span>
-                                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-                                </p>
-                                <hr class="major">
-                                <p>
-                                    <span class="image main"><img src="{{ asset('images/partenaires/meltdown_banner.jpg') }}" alt=""></span>
-                                    <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-                                </p>
-								</section>
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="{{ path('prism_esport_homepage') }}">Accueil</a></li>
-										<li><a href="{{ path('prism_esport_partenaires') }}">Partenaires</a></li>
-										<!-- <li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li> -->
-									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Derniers articles</h2>
-									</header>
-									<div class="mini-posts">
-										<p>BIENTOT...</p>
-										{#<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>#}
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Contactez-nous</h2>
-									</header>
-									<p>Vous avez des questions ? Une envie ? Vous souhaitez nous complimenter. N'hésitez pas à prendre contact avec nous !</p>
-									<ul class="contact">
-										<li class="fa-envelope-o"><a href="mailto:contact@prism-esport.com">contact@prism-esport.com</a></li>
-										<li class="fa-phone">+33 658768446</li>
-										<li class="fa-home">27 Rue Raoul Servant<br />
-										69007 Lyon</li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Prism eSport. All rights reserved. Logo: <a
-												href="https://www.facebook.com/RisingDreams8">Elodie Ribeiro</a>. Design: <a
-												href="https://html5up
-												.net">HTML5 UP</a>.</p>
-								</footer>
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-
-
-
+    <!-- Section partenaires-->
+        <section>
+        <p>
+            <span class="image main"><img src="{{ asset('images/partenaires/lusee_banner.jpg') }}" alt=""></span>
+            <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+        </p>
+        <hr class="major">
+        <p>
+            <span class="image main"><img src="{{ asset('images/partenaires/meltdown_banner.jpg') }}" alt=""></span>
+            <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+        </p>
+        </section>
 
 		{% javascripts 'bundles/prismesport/js/jquery.min.js'
 		               'bundles/prismesport/js/skel.min.js'
