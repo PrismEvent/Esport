@@ -20,5 +20,5 @@ prism_blog_view:
     defaults: 
         _controller: PrismBlogBundle:Blog:view
     requirements:
-        id: \d
+        id: \d+
 

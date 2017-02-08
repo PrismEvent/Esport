@@ -78,3 +78,6 @@ kms_froala_editor:
     toolbarInline: false
     tableColors: [ "#FFFFFF", "#FF0000" ]
     #saveParams: { "id" : "myEditorField" }
+
+vich_uploader:
+    db_driver: orm
