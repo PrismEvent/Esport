@@ -27,7 +27,8 @@
         "patchwork/jsqueeze": "~1.0",
         "stfalcon/tinymce-bundle": "2.0",
         "kms/froala-editor-bundle": "dev-master",
-        "friendsofsymfony/user-bundle": "dev-master"
+        "friendsofsymfony/user-bundle": "dev-master",
+        "vich/uploader-bundle": "^1.4"
 
     },
     "require-dev": {
