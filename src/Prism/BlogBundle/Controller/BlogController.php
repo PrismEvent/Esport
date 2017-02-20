@@ -13,6 +13,8 @@ class BlogController extends Controller
     public function addAction(Request $request) 
     {
     	$article = new Article();
+		$article->setDate(new \DateTime("now"));
+		$article->setUpdatedAt(new \DateTime("now"));
 
     	$form = $this->get('form.factory')->create(ArticleType::class, $article);
 

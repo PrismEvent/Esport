@@ -81,9 +81,6 @@ kms_froala_editor:
     #fileInsertButtons : ['fileBack', '|']
     #saveParams: { "id" : "myEditorField" }
 
-#vich_uploader:
-    #db_driver: orm
-
 fos_user:
     db_driver:     orm
     firewall_name: main
@@ -91,3 +88,11 @@ fos_user:
     from_email:
          address: noreply@prism-esport.com
          sender_name: Prism eSport
+
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        article_image:
+            uri_prefix:         /images/articles
+            upload_destination: '%kernel.root_dir%/../web/images/articles'

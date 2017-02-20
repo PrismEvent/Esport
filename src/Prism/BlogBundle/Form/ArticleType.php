@@ -7,6 +7,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use KMS\FroalaEditorBundle\Form\Type\FroalaEditorType;
@@ -19,11 +20,12 @@ class ArticleType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-        ->add('date', DateTimeType::class, array(
+        /*->add('date', DateTimeType::class, array(
             'data' => new \DateTime("now"),
-            'widget' => 'choice'))
+            'widget' => 'choice'))*/
         ->add('title', TextType::class)
         ->add('author', TextType::class)
+        ->add('imageFile', FileType::class)
         ->add('content', FroalaEditorType::class)
         ->add('save', SubmitType::class)
         ;
