@@ -5,7 +5,7 @@
     <div class="posts">
         {% for article in lastArticle %}
             <article>
-                <a href="{{ path('prism_blog_view', { 'id': article.id }) }}" class="image"><img src="{{ asset('images/prism_placeholder2.jpg') }}" alt="" /></a>
+                <a href="{{ path('prism_blog_view', { 'id': article.id }) }}" class="image"><img src="{{ asset('images/articles/') ~ article.imageName }}" alt="" /></a>
                 <h3>{{ article.title }}</h3>
                 <p>Par {{ article.author }}, le {{ article.date | date('d/m/Y') }}</p>
                 <ul class="actions">
