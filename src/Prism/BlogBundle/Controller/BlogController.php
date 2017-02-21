@@ -67,7 +67,7 @@ class BlogController extends Controller
     {
     	$em = $this->getDoctrine()->getManager();
 
-    	$articles = $em->getRepository('PrismBlogBundle:Article')->findAll();
+    	$articles = $em->getRepository('PrismBlogBundle:Article')->findBy(array(), array('date' => 'desc'));
 
     	if (null === $articles) 
     	{
