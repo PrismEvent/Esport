@@ -1,17 +1,18 @@
 {% extends '::layout.html.twig' %}
 
 {% block body %}
-<section>
-<header class="major">
-	<h2>Blog Esport</h2>
-</header>
-<div class="posts">
-{% for article in articles %}
-<article>
-	<a href="{{ path('prism_blog_view', { 'id': article.id }) }}" class="image"><img src="{{ asset('images/prism_placeholder2.jpg') }}" alt="" /></a>
-	<h3>{{ article.title }} </h3> <h3><i>Par {{ article.author }}, le {{ article.date| date('d/m/Y H:i') }}</i>	</h3>
-</article>
-{% endfor %}
-</div>
-</section>
+	<section>
+		<header class="major">
+			<h2>Blog Esport</h2>
+		</header>
+		<div class="posts">
+		{% for article in articles %}
+		<article>
+			<a href="{{ path('prism_blog_view', { 'id': article.id }) }}" class="image"><img src="{{ asset('images/articles/') ~ article.imageName }}" alt="" /></a>
+			<h3>{{ article.title }} </h3> 
+			<h3><i>Par {{ article.author }}, le {{ article.date| date('d/m/Y H:i') }}</i></h3>
+		</article>
+		{% endfor %}
+		</div>
+	</section>
 {% endblock %}
