@@ -24,7 +24,6 @@ class ArticleType extends AbstractType
             'data' => new \DateTime("now"),
             'widget' => 'choice'))*/
         ->add('title', TextType::class)
-        ->add('author', TextType::class)
         ->add('imageFile', FileType::class)
         ->add('content', FroalaEditorType::class)
         ->add('save', SubmitType::class)

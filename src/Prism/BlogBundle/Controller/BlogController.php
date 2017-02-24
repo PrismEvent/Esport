@@ -20,6 +20,8 @@ class BlogController extends Controller
 
     	$form = $this->get('form.factory')->create(ArticleType::class, $article);
 
+    	$article->setAuthor($user);
+
     	if ($request->isMethod('POST') && $form->handleRequest($request)->isValid())
     	{
     		$em = $this->getDoctrine()->getManager();
