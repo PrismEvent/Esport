@@ -16,6 +16,8 @@ class BlogController extends Controller
 		$article->setDate(new \DateTime("now"));
 		$article->setUpdatedAt(new \DateTime("now"));
 
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+
     	$form = $this->get('form.factory')->create(ArticleType::class, $article);
 
     	if ($request->isMethod('POST') && $form->handleRequest($request)->isValid())
@@ -31,7 +33,8 @@ class BlogController extends Controller
     	}
 
     	return $this->render('PrismBlogBundle:Blog:formAdd.html.twig', array(
-    		'form' => $form->createView()));
+    		'form' => $form->createView(),
+            'user' => $user));
     }
 
     //Action: Edit an article (need the id)

@@ -17,7 +17,11 @@
 		{% endstylesheets %}
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><
+		![endif]-->
+		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/jquery/jquery-1.8.2.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/fullcalendar/jquery.fullcalendar.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/calendar-settings.js') }}"></script>
 		<script type="text/javascript">
             var _paq = _paq || [];
             // tracker methods like "setCustomDimension" should be called before "trackPageView"
@@ -156,8 +160,5 @@
 		<script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
 		<script type="text/javascript" src="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.4.0/js/froala_editor.min.js')}}"></script>
-		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/jquery/jquery-1.8.2.min.js') }}"></script>
-		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/fullcalendar/jquery.fullcalendar.min.js') }}"></script>
-		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/calendar-settings.js') }}"></script>
 	</body>
 </html>

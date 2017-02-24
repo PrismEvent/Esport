@@ -2,25 +2,29 @@
 
 {% block body %}
 
-	{{ form_start(form) }}
-    {{ form_errors(form) }}
+    {% if is_granted('ROLE_ADMIN') %}
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
 
-    <div class="6u 12u$(xsmall)">
-        {{ form_row(form.title) }}
-    </div>
-    
-    <div class="6u 12u$(xsmall)">
-        {{ form_row(form.author) }}
-    </div>
-    
-    <div class="6u 12u$(xsmall)">
-        {{ form_row(form.imageFile, { 'label': 'Image' }) }}
-    </div>
+        <div class="6u 12u$(xsmall)">
+            {{ form_row(form.title) }}
+        </div>
 
-    <div class="fr-view">
-        {{ froala_display( form_row(form.content) ) }}
-    </div>
+        <div class="6u 12u$(xsmall)">
+            {{ form_row(form.author) }}
+        </div>
 
-    {{ form_row(form.save, { 'label': 'Post' }) }}
-    {{ form_end(form) }}
+        <div class="6u 12u$(xsmall)">
+            {{ form_row(form.imageFile, { 'label': 'Image' }) }}
+        </div>
+
+        <div class="fr-view">
+            {{ froala_display( form_row(form.content) ) }}
+        </div>
+
+        {{ form_row(form.save, { 'label': 'Post' }) }}
+        {{ form_end(form) }}
+    {% else %}
+        <p>Vous ne pouvez pas créer d'article si vous n'êtes pas connecté.</p>
+    {% endif %}
 {% endblock %}

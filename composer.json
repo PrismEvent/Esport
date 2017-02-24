@@ -29,7 +29,8 @@
         "kms/froala-editor-bundle": "dev-master",
         "friendsofsymfony/user-bundle": "dev-master",
         "vich/uploader-bundle": "^1.4",
-        "adesigns/calendar-bundle": "^1.1"
+        "adesigns/calendar-bundle": "^1.1",
+        "friendsofsymfony/jsrouting-bundle": "^1.6"
 
     },
     "require-dev": {

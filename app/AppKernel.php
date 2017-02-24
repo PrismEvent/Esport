@@ -23,6 +23,7 @@ class AppKernel extends Kernel
             new Vich\UploaderBundle\VichUploaderBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Prism\UserBundle\PrismUserBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new ADesigns\CalendarBundle\ADesignsCalendarBundle(),
         ];
 
