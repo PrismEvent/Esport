@@ -1,0 +1,10 @@
+<ul class="alt">
+    {% for article in lastArticle %}
+        <li>
+            <a href="{{ path('prism_blog_view', { 'id': article.id }) }}" class="image">
+                <span><strong>{{ article.title }}</strong> par {{ article.author }}</span>
+            </a>
+        </li>
+    {% endfor %}
+    <li><a href="{{ path('prism_blog_viewlist') }}" class="button">Voir plus</a></li>
+</ul>

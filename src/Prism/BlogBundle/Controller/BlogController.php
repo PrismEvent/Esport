@@ -111,4 +111,19 @@ class BlogController extends Controller
         return $this->render('PrismBlogBundle:Blog:viewFirst.html.twig', array(
             'lastArticle' => $lastArticle));
     }
+
+	public function viewFirstSidebarAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $lastArticle = $em->getRepository('PrismBlogBundle:Article')->findBy(array(), array('date' => 'desc'), 3, 0);
+
+        if (null === $lastArticle)
+        {
+            throw new NotFoundHttpException("Il n'y a pas encore d'article sur le blog.");
+        }
+
+        return $this->render('PrismBlogBundle:Blog:viewFirstSidebar.html.twig', array(
+            'lastArticle' => $lastArticle));
+    }
 }
