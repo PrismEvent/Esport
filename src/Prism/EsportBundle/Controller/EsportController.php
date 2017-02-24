@@ -20,4 +20,9 @@ class EsportController extends Controller
     {
         return $this->render('PrismEsportBundle:Esport:calendrier.html.twig');
     }
+
+    public function billeterieAction()
+    {
+        return $this->render('PrismEsportBundle:Esport:billeterie.html.twig');
+    }
 }

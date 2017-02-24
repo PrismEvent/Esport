@@ -12,3 +12,8 @@ prism_esport_calendrier:
     path: /calendrier
     defaults:
         _controller: PrismEsportBundle:Esport:calendrier
+
+prism_esport_billeterie:
+    path: /billeterie
+    defaults:
+        _controller: PrismEsportBundle:Esport:billeterie
