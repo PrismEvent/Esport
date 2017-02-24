@@ -1,0 +1,24 @@
+prism_user:
+    resource: "@PrismUserBundle/Resources/config/routing.yml"
+    prefix:   /user
+
+prism_blog:
+    resource: "@PrismBlogBundle/Resources/config/routing.yml"
+    prefix:   /blog
+
+prism_esport:
+    resource: "@PrismEsportBundle/Resources/config/routing.yml"
+    prefix:   /
+
+kms_froala_editor:
+    resource: "@KMSFroalaEditorBundle/Resources/config/routing.yml"
+    prefix:   /froalaeditor
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+adesigns_calendar:
+    resource: "@ADesignsCalendarBundle/Resources/config/routing.xml"

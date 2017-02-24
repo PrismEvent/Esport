@@ -1,0 +1,24 @@
+prism_blog_add:
+    path: /add
+    defaults: 
+        _controller: PrismBlogBundle:Blog:add
+
+prism_blog_edit:
+    path: /edit/{id}
+    defaults: 
+        _controller: PrismBlogBundle:Blog:edit
+    requirements:
+        id: \d+
+
+prism_blog_viewlist:
+    path: /
+    defaults: 
+        _controller: PrismBlogBundle:Blog:viewlist
+
+prism_blog_view:
+    path: /article/{id}
+    defaults: 
+        _controller: PrismBlogBundle:Blog:view
+    requirements:
+        id: \d+
+

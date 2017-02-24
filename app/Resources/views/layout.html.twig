@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Prism Esport</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.4.2/css/froala_style.css') }}" />
+		<link rel="stylesheet" href="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.4.2/css/froala_editor.css') }}" />
+		<link rel="stylesheet" href="{{ asset('bundles/adesignscalendar/css/fullcalendar/fullcalendar.css') }}" />
+		{% stylesheets 'bundles/prismesport/css/main.css' filter='cssrewrite' %}
+  			<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+		{% endstylesheets %}
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><
+		![endif]-->
+		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/jquery/jquery-1.8.2.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/fullcalendar/jquery.fullcalendar.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('bundles/adesignscalendar/js/calendar-settings.js') }}"></script>
+		<script type="text/javascript">
+            var _paq = _paq || [];
+            // tracker methods like "setCustomDimension" should be called before "trackPageView"
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="//192.168.1.10/";
+                _paq.push(['setTrackerUrl', u+'piwik.php']);
+                _paq.push(['setSiteId', '1']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+		</script>
+		<!-- End Piwik Code -->
+	</head>
+	<body>
+
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<!-- Header -->
+					<header id="header">
+						<a href="{ path('prism_esport_homepage') }" class="logo"><strong>Prism eSport</strong></a>
+						<ul class="icons">
+							<li><a href="https://twitter.com/Prismesport" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/prismesport" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://twitch.tv/prismesport/" target="_blank" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="https://www.instagram.com/prismesport/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</header>
+					{% block body %}
+					{% endblock %}
+				</div>
+			</div>
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner">
+
+					<!-- Search 
+					<section id="search" class="alt">
+						<form method="post" action="#">
+							<input type="text" name="query" id="query" placeholder="Search" />
+						</form>
+					</section>
+					-->
+
+					<!-- Menu -->
+					<nav id="menu">
+						<header class="major">
+							<h2>Menu</h2>
+						</header>
+						<ul>
+							<li><a href="{{ path('prism_esport_homepage') }}">Accueil</a></li>
+							<li><a href="{{ path('prism_esport_partenaires') }}">Partenaires</a></li>
+                            <li><a href="{{ path('prism_esport_billeterie') }}">Billeterie</a></li>
+							<!-- <li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+							<li>
+								<span class="opener">Submenu</span>
+								<ul>
+									<li><a href="#">Lorem Dolor</a></li>
+									<li><a href="#">Ipsum Adipiscing</a></li>
+									<li><a href="#">Tempus Magna</a></li>
+									<li><a href="#">Feugiat Veroeros</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Etiam Dolore</a></li>
+							<li><a href="#">Adipiscing</a></li>
+							<li>
+								<span class="opener">Another Submenu</span>
+								<ul>
+									<li><a href="#">Lorem Dolor</a></li>
+									<li><a href="#">Ipsum Adipiscing</a></li>
+									<li><a href="#">Tempus Magna</a></li>
+									<li><a href="#">Feugiat Veroeros</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Maximus Erat</a></li>
+							<li><a href="#">Sapien Mauris</a></li>
+							<li><a href="#">Amet Lacinia</a></li> -->
+						</ul>
+					</nav>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>Derniers articles</h2>
+						</header>
+						<div class="mini-posts">
+							{{ render(controller('PrismBlogBundle:Blog:viewFirstSidebar')) }}
+							{#<article>
+								<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+								<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+							</article>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">More</a></li>
+						</ul>#}
+					</section>
+
+					<!-- Section -->
+					<section>
+						<header class="major">
+							<h2>Contactez-nous</h2>
+						</header>
+						<p>Vous avez des questions ? Une envie ? Vous souhaitez nous complimenter. N'hésitez pas à prendre contact avec nous !</p>
+						<ul class="contact">
+							<li class="fa-envelope-o"><a href="mailto:contact@prism-esport.com">contact@prism-esport.com</a></li>
+							<li class="fa-phone">+33 658768446</li>
+							<li class="fa-home">27 Rue Raoul Servant<br />
+								69007 Lyon</li>
+						</ul>
+					</section>
+
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Prism eSport. All rights reserved. Logo: <a
+									href="https://www.facebook.com/RisingDreams8">Elodie Ribeiro</a>. Design: <a
+									href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+				</div>
+			</div>
+		</div>
+        {% javascripts 'bundles/prismesport/js/jquery.min.js'
+        'bundles/prismesport/js/skel.min.js'
+        'bundles/prismesport/js/util.js'
+        'bundles/prismesport/js/main.js'%}
+		<script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+		<script type="text/javascript" src="{{ asset('bundles/kmsfroalaeditor/froala_editor_2.4.2/js/froala_editor.min.js')}}"></script>
+	</body>
+</html>

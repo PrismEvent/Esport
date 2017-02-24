@@ -1,0 +1,19 @@
+prism_esport_homepage:
+    path:     /
+    defaults: 
+        _controller: PrismEsportBundle:Esport:index
+
+prism_esport_partenaires:
+    path:     /partenaires
+    defaults: 
+        _controller: PrismEsportBundle:Esport:partenaires
+
+prism_esport_calendrier:
+    path: /calendrier
+    defaults:
+        _controller: PrismEsportBundle:Esport:calendrier
+
+prism_esport_billeterie:
+    path: /billeterie
+    defaults:
+        _controller: PrismEsportBundle:Esport:billeterie

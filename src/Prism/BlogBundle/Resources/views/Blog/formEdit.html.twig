@@ -1,0 +1,25 @@
+{% extends '::layout.html.twig' %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+
+	<div class="6u 12u$(xsmall)">
+        {{ form_row(form.title) }}
+	</div>
+
+	<div class="6u 12u$(xsmall)">
+        {{ form_row(form.author) }}
+	</div>
+
+	<div class="6u 12u$(xsmall)">
+        {{ form_row(form.imageFile, { 'label': 'Image' }) }}
+	</div>
+
+	<div class="fr-view">
+        {{ froala_display( form_row(form.content) ) }}
+	</div>
+
+    {{ form_row(form.save, { 'label': 'Post' }) }}
+    {{ form_end(form) }}
+{% endblock %}

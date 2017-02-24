@@ -1,0 +1,21 @@
+{% extends '::layout.html.twig' %}
+
+{% block body %}
+	<section>
+		<header class="major">
+			<h2>Blog Esport</h2>
+		</header>
+		<div class="post" style="margin:0 20%;">
+		<article>
+			<a href="#" class="image"><img style="max-width:100%" src="{{ asset('images/articles/') ~ article.imageName }}" alt="" /></a>
+			<h3>{{ article.title }}</h3>
+			<p>Par {{ article.author }}, le {{ article.date| date('d/m/Y H:i') }}</p>
+			<p>
+				{% autoescape false %}
+					{{ article.content }}
+				{% endautoescape %}
+			</p>
+		</article>
+		</div>
+	</section>
+{% endblock %}
