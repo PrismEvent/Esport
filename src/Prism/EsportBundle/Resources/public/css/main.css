@@ -3330,7 +3330,7 @@
 			.posts article .image {
 				display: block;
 				margin: 0 0 2em 0;
-				max-height: 250px; /* modif rbg */
+				max-height: 300px; /* modif rbg */
 				overflow: hidden; /* modif rbg */
 			}
 
